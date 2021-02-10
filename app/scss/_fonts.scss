@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf),
+         url(../fonts/Roboto-Regular.woff2),
+         url(../fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Bold.ttf),
+         url(../fonts/Roboto-Bold.woff2),
+         url(../fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(../fonts/Rubik-Regular.woff),
+         url(../fonts/Rubik-Regular.woff2),
+         url(../fonts/Rubik-Regular.ttf);
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(../fonts/Rubik-Bold.woff),
+         url(../fonts/Rubik-Bold.woff2),
+         url(../fonts/Rubik-Bold.ttf);
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik-BoldItalic";
+    src: url(../fonts/Rubik-BoldItalic.woff),
+         url(../fonts/Rubik-BoldItalic.woff2),
+         url(../fonts/Rubik-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(../fonts/Rubik-Medium.woff),
+         url(../fonts/Rubik-Medium.woff2),
+         url(../fonts/Rubik-Medium.ttf);
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(../fonts/SourceCodePro-Regular.woff),
+         url(../fonts/SourceCodePro-Regular.woff2),
+         url(../fonts/SourceCodePro-Regular.ttf);
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(../fonts/SourceCodePro-Bold.woff),
+         url(../fonts/SourceCodePro-Bold.woff2),
+         url(../fonts/SourceCodePro-Bold.ttf);
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+}

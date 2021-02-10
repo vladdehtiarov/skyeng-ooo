@@ -1,0 +1,107 @@
+// New approach styles
+.new-approach {
+    margin-top: 70px;
+    padding-top: 54px;
+    padding-bottom: 130px;
+    background-color: $bg-green;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+
+    @include responsive(mobile) {
+        margin-top: 60px;
+        padding-top: 500px;
+        padding-bottom: 82px;
+    }
+
+    &__content-wrapper {
+        @include flex(row);
+        align-items: flex-start;
+    }
+
+    .link-wrapper {
+        margin-top: 25px;
+
+        @include responsive(mobile) {
+            margin-top: 22px;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+
+    &__img-wrapper {
+        margin-top: 60px;
+        border-radius: 16px;
+    }
+
+    &__img-wrapper:nth-child(2) {
+        @include imgToCeneter(904px, 489px);
+
+        @include responsive(mobile) {
+            @include imgToCeneter(100%, 395px);
+            margin-top: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 0;
+            overflow: hidden;
+            overflow-x: scroll;
+
+            img {
+                width: 730px;
+                margin: 0 14px;
+                border-radius: 16px;
+                left: 0;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+
+    &__img-wrapper:nth-child(3) {
+        @include imgToCeneter(382px, 590px);
+
+        margin-top: -754px;
+        margin-left: 818px;
+
+        @include responsive(mobile) {
+            @include imgToCeneter(338px, 518px);
+            margin: 0;
+            margin-top: 60px;
+        }
+    }
+
+    &__text-block {
+        margin-top: 55px;
+
+        @include responsive(mobile) {
+            margin-top: 48px;
+        }
+    }
+
+    &__text-block:nth-child(4) {
+        width: 100%;
+        max-width: 588px;
+        line-height: 115%;
+        letter-spacing: -0.1px;
+    }
+
+    &__text-block:last-child {
+        width: 100%;
+        max-width: 546px;
+        margin-right: 42px;
+        color: rgba(255, 255, 255, 0.3);
+
+        @include responsive(mobile) {
+            width: 98%;
+            margin: 0;
+            margin-top: 22px;
+        }
+    }
+
+    .section-label {
+        width: 100%;
+        max-width: 470px;
+    }
+}

@@ -1,0 +1,128 @@
+.footer {
+    width: 100%;
+    padding: 32px 0;
+    font-size: 18px;
+    line-height: 106%;
+    letter-spacing: -0.1px;
+    border-top: 2px solid $bg-blue;
+    color: #9F9F9F;
+
+    @include responsive(mobile) {
+        padding: 27px 0 22px 0;
+        font-size: 16px;
+        line-height: 106%;
+    }
+
+    a {
+        font-size: 18px;
+        line-height: 106%;
+        letter-spacing: -0.1px;
+        color: #9F9F9F;
+
+        @include responsive(mobile) {
+            font-size: 16px;
+            line-height: 106%;
+        }
+    }
+
+    &__inner {
+        width: 100%;
+        @include flex(row);
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        @include responsive(mobile) {
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    &__leasons {
+        width: 390px;
+        line-height: 137.5%;
+        margin-left: 42px;
+
+        @include responsive(mobile) {
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 33px;
+            line-height: 106%;
+            order: 1;
+        }
+    }
+
+
+    &__logo-license {
+        margin-left: 70px;
+        
+        @include responsive(mobile) {
+            display: none;
+        }
+    }
+}
+
+.footer-logo {
+    width: 155px;
+    height: auto;
+
+    @include responsive(mobile) {
+        width: auto;
+        height: 117px;
+        @include flex(column);
+        order: 2;
+    }
+
+    &__img {
+        @include imgToCeneter(155px, 111px);
+
+        @include responsive(mobile) {
+            @include imgToCeneter(112px, 80px);
+        }
+    }
+
+    &__text {
+        display: none;
+
+        @include responsive(mobile) {
+            display: block;
+        }
+    }
+}
+
+.footer-menu {
+    width: 367px;
+    margin-left: 48px;
+
+    @include responsive(mobile) {
+        width: auto;
+        margin-left: 0;
+        order: 3;
+    }
+
+    &__title {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 45px;
+
+        @include responsive(mobile) {
+            margin-bottom: 18px;
+        }
+    }
+
+    &__menu {
+        width: inherit;
+        @include flex(row);
+
+        @include responsive(mobile) {
+            @include flex(column);
+        }
+    }
+    
+    &__item {
+        width: 162px;
+        padding-right: 42px;
+        // padding-right: 80px;
+        margin: 3px 0;
+    }
+
+}

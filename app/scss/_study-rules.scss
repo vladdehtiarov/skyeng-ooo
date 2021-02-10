@@ -1,0 +1,256 @@
+.study-rules {
+    width: 100%;
+    margin-bottom: 68px;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+
+    @include responsive(mobile) {
+        margin-bottom: 54px;
+    }
+
+    &__img-wrapp {
+        display: none;
+        @include responsive(mobile) {
+            display: block;
+            position: absolute;
+            top: 120px;
+            // left: 14px;
+            right: 0;
+            z-index: 10;
+        }
+
+        .study-rules__img {
+            @include imgToCeneter(354px, 530px);
+
+        }
+    }
+
+    &__blue-block {
+        width: 100%;
+        height: 665px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $bg-blue;
+        z-index: -1;
+
+        @include responsive(mobile) {
+            height: 560px;
+        }
+    }
+
+    &__title {
+        font-family: $global-fonts;
+        font-size: 64px;
+        font-weight: normal;
+        line-height: 106%;
+        letter-spacing: -1.5px;
+        color: #FFFFFF;
+        padding-top: 93px;
+        margin-bottom: 70px;
+
+        @include responsive(mobile) {
+            max-width: 264px;
+            font-size: 40px;
+            padding-top: 45px;
+            margin-bottom: 232px;
+        }
+    }
+
+    &__step {
+        width: 955px;
+        height: 235px;
+        padding: 52px 97px;
+        background-color: #FFFFFF;
+        border-radius: 138px;
+        margin-top: 41px;
+
+        @include responsive(laptop) {
+            width: auto;
+        }
+
+        @include responsive(mobile) {
+            width: 100%;
+            height: auto;
+            padding: 27px 30px;
+            padding-bottom: 37px;
+            border-radius: 14px;
+            margin-top: 19px;
+        }
+    }
+
+    .step-title {
+        max-width: 400px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 100%;
+        color: $text-black;
+
+        @include responsive(mobile) {
+            width: 100%;
+            max-width: 275px;
+            margin-bottom: 20px;
+            font-size: 26px;
+            line-height: 100%;
+
+        }
+    }
+
+    .step-descr {
+        max-width: 388px;
+        font-size: 22px;
+        line-height: 115%;
+        color: $text-black;
+
+        @include responsive(mobile) {
+            width: 100%;
+            font-size: 18px;
+            line-height: 115%;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        .study-rules__image-block {
+            position: absolute;
+            top: -192px;
+            left: 330px;
+
+            @include responsive(laptop) {
+                top: -12vw;
+                left: 26vw;
+            }
+            
+            @include responsive(mobile) {
+                display: none;
+            }
+        }
+        .study-rules__image {
+            @include imgToCeneter(828px, 892px);
+
+            @include responsive(laptop) {
+                @include imgToCeneter(66vw, 66vw);
+            }
+
+            @include responsive(mobile) {
+                @include imgToCeneter(446px, 667px);
+            }
+        }
+    }
+}
+
+.study-rules__first-steps {
+    .study-rules__step {
+        &:first-child {
+            @include responsive(mobile) {
+                padding-top: 108px;
+                padding-bottom: 29px;
+            }
+
+            .step-title {
+                @include responsive(mobile) {
+                    width: 90%;
+                }
+            }
+        }
+
+        &:last-child {
+            @include responsive(mobile) {
+                padding-bottom: 40px;
+            }
+
+            .step-title {
+                @include responsive(mobile) {
+                    margin-bottom: 34px;
+                }
+            }
+
+            .step-descr {
+                @include responsive(mobile) {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+.study-rules__last-steps {
+
+    @include flex(row);
+
+    @include responsive(mobile) {
+        display: block;
+    }
+
+
+    .study-rules__step {
+        width: 692px;
+        height: 296px;
+        border-radius: 21px 0 0 21px;
+
+        @include responsive(mobile) {
+            width: 100%;
+            height: auto;
+            padding: 27px 30px;
+            border-radius: 14px;
+            margin-top: 19px;
+        }
+
+        &:first-child {
+            @include responsive(mobile) {
+                padding-left: 26px;
+                padding-right: 0;
+                padding-bottom: 44px;
+            }
+
+            .step-title {
+                @include responsive(mobile) {
+                    margin-bottom: 33px;
+                }
+            }
+
+            .step-descr {
+                @include responsive(mobile) {
+                    width: 100%;
+                    
+                }
+            }
+        }
+
+        &:last-child {
+            width: 508px;
+            border-radius: 0 21px 21px 0;
+            z-index: 10;
+
+            @include responsive(mobile) {
+                width: 100%;
+                height: auto;
+                padding: 27px 30px;
+                border-radius: 14px;
+                margin-top: 19px;
+                padding-bottom: 38px;
+            }
+
+            .step-title {
+                @include responsive(mobile) {
+                    margin-bottom: 33px;
+                }
+            }
+
+            .step-descr {
+                width: 325px;
+
+                @include responsive(mobile) {
+                    width: 95%;
+                    font-size: 18px;
+                    line-height: 115%;
+                }
+            }
+        }
+    }
+
+    .step-descr {
+        max-width: 465px;
+    }
+}

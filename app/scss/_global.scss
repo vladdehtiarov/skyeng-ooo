@@ -1,0 +1,83 @@
+*, html, body {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $global-fonts;
+    font-weight: normal;
+    font-size: 22px;
+    background-color: $bg-gray;
+
+    @include responsive(mobile) {
+        font-size: 18px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+
+
+    @include responsive(mobile) {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    @include responsive(laptop) {
+        width: 95%;
+    }
+}
+
+.link-wrapper {
+    a {
+        font-family: $nav-fonts;
+        font-size: 22px;
+        line-height: 106%;
+        letter-spacing: -0.120733px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $text-black;
+
+        @include responsive(mobile) {
+            font-size: 18px;
+        }
+    }
+}
+
+.section-label {
+    h2 {
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 106%;
+        letter-spacing: -0.1px;
+
+        @include responsive(mobile) {
+            font-size: 26px;
+            line-height: 110%;
+        }
+    }
+}

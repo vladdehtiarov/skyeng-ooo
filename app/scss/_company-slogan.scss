@@ -1,0 +1,154 @@
+// Company slogan styles
+.company-slogan {
+    width: 100%;
+    margin-top: 70px;
+    position: relative;
+
+    @include responsive(mobile) {
+        margin-top: 28px;
+    }
+
+    .link-wrapper {
+        margin-top: 40px;
+        @include responsive(mobile) {
+            margin-top: 18px;
+        }
+    } 
+
+    &__label {
+        max-width: 1070px;
+      
+        @include flex(row);
+
+        @include responsive(mobile) {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        span {
+            font-size: 86px;
+            line-height: 100%;
+            letter-spacing: -0.179375px;
+            color: $text-black;
+
+            @include responsive(mobile) {
+                font-size: 48px;
+                line-height: 49px;
+            }
+        }
+    }
+}
+
+.label-block {
+    height: 85px;
+    border-radius: 46px;
+
+    @include responsive(mobile) {
+        height: 52px;
+        border: 36px;
+    }
+}
+
+#text-span-1 {
+    @include responsive(mobile) {
+        order: 0;
+    }
+}
+
+#text-span-2 {
+    @include responsive(mobile) {
+        order: 1;
+    }
+}
+
+#text-span-3 {
+    @include responsive(mobile) {
+        order: 3;
+    }
+}
+
+#text-span-4 {
+    @include responsive(mobile) {
+        margin-right: 147px;
+        margin-top: 10px;
+        order: 6;
+    }
+}
+
+.rect-pink {
+    width: 456px;
+    background-color: $bg-pink;
+
+    @include responsive(mobile) {
+        width: 165px;
+        margin-top: -52px;
+        margin-bottom: -12px;
+        margin-left: 150px;
+        order: 2;
+    }
+}
+
+.rect-green {
+    width: 295px;
+    margin-right: 14px;
+    margin-bottom: -14px;
+    background-color: $bg-green;
+
+    @include responsive(mobile) {
+        display: none;
+    }
+}
+
+.circle-blue {
+    width: 85px;
+    margin-bottom: -18px;
+    background-color: $bg-blue;
+
+    @include responsive(mobile) {
+        width: 52px;
+        margin-top: 20px;
+        margin-left: -4px;
+        margin-bottom: 0;
+        order: 5;
+    }
+}
+
+.label-block.rect-orange {
+    width: 578px;
+    margin-bottom: -14px;
+    padding-left: 32px;
+    background-color: $bg-orange;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: -1px;
+
+    @include responsive(mobile) {
+        width: 319px;
+        margin-top: 10px;
+        padding-left: 14px;
+        font-size: 44px;
+        letter-spacing: -0.179375px;
+        order: 4;
+    }
+}
+
+.label-text:nth-child(2) {
+    margin-right: 14px;
+
+    @include responsive(mobile) {
+        margin-right: 0;
+    }
+}
+
+
+
+.label-text:last-child {
+    margin-right: 108px;
+
+    @include responsive(mobile) {
+        margin-right: 0;
+    }
+}
+
+  
