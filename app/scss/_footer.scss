@@ -6,7 +6,7 @@
     letter-spacing: -0.1px;
     border-top: 2px solid $bg-blue;
     color: #9F9F9F;
-    font-family: "Roboto", sans-serif;
+    font-family: $global-fonts;
 
 
     @include responsive(mobile) {
@@ -16,6 +16,7 @@
     }
 
     a {
+        font-family: $global-fonts;
         font-size: 18px;
         line-height: 106%;
         letter-spacing: -0.1px;
